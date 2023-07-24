@@ -1,70 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Reactracker App
+The Reactracker App is a simple React.js application that allows users to track their income and expenses. It provides a user-friendly interface where users can enter their goods, along with the respective amounts, and categorize them as either income (positive value) or expenses (negative value). The app then calculates the total income, total expenses, and displays the remaining balance.
 
-## Available Scripts
+The Reactracker App leverages the power of React's useReducer hook and Context API to manage and handle the state of the application, providing an efficient and scalable solution.
 
-In the project directory, you can run:
+Features
+Add Income and Expenses: Users can add their goods and amounts as income or expenses through the input form provided in the application.
 
-### `npm start`
+Dynamic List: The application displays a dynamic list of added goods, showing their amounts and whether they are income or expenses. The list is automatically updated as the user adds new items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Automatic Calculation: The Reactracker App automatically calculates the total income and total expenses based on the user's input.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Remaining Balance: The app calculates and displays the remaining balance by subtracting the total expenses from the total income.
 
-### `npm test`
+Technologies Used
+The Reactracker App is built using the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React.js: A popular JavaScript library for building user interfaces.
+useReducer Hook: Used to manage state and handle state transitions efficiently.
+Context API: Utilized to create a global state accessible by all components, providing a clean and scalable solution.
+Getting Started
+To run the Reactracker App on your local machine, follow these steps:
 
-### `npm run build`
+Clone the Repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+git clone https://github.com/your-username/reactrackerapp.git
+cd reactrackerapp
+Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
+Run the Application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+The app should now be running at http://localhost:3000.
 
-### `npm run eject`
+How to Use
+Add Goods:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In the input form, enter the name of the good and its corresponding amount. If it's income, use a positive value, and if it's an expense, use a negative value.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Categorize as Income or Expense:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Next to each entry, you can select whether it's an income or an expense using a radio button or a dropdown menu.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+View Total Income and Total Expenses:
 
-## Learn More
+The application will automatically calculate and display the total income and total expenses based on your input.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Remaining Balance:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The remaining balance is calculated as the total income minus the total expenses and is displayed at the top of the app.
 
-### Code Splitting
+Folder Structure
+The folder structure of the Reactracker App is organized as follows:
+|-- ...
+public/: Contains the public assets and the root HTML file (index.html).
+src/components/: Holds the various React components used in the app.
+src/context/: Contains the Context API setup and configuration files.
+src/reducers/: Contains the reducer function to manage state transitions.
+App.js: The main application component that ties all the components together.
+index.js: The entry point of the application.
+Contributions
+Contributions to the Reactracker App are welcome! If you find any bugs or have ideas for improvements, please feel free to open an issue or submit a pull request. Let's make the app better together!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+License
+The Reactracker App is open-source and available under the MIT License.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
